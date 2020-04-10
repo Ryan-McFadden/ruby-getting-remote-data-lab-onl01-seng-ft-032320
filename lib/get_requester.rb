@@ -1,5 +1,4 @@
-# Write your code here
-
+require ""
 class GetRequester
   
   def initialize(url)
