@@ -1,5 +1,5 @@
 require "open-uri"
-require ""
+require "net/http"
 class GetRequester
   
   def initialize(url)
