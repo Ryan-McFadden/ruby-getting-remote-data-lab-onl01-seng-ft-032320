@@ -3,6 +3,7 @@ require "net/http"
 require "json"
 
 class GetRequester
+  attr_accessor :url
   
   def initialize(url)
     @url = url
@@ -10,7 +11,7 @@ class GetRequester
   
   def get_response_body
     uri = URI.parse(@url)
-    response = NET::HTTP.get_response
+    response = NET::HTTP.get_response(uri)
   end
   
   def parse_json
